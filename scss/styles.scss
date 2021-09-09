@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+$coffeebg: rgba(173, 94, 3, 0.75);
+$navlink: rgb(80, 47, 10);
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $coffeebg;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 80%;
+}
+
+nav {
+  ul {
+    background-color: $navlink;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  a {
+    color: $coffeebg;
+    font-weight: bold;
+    flex-grow: 1;
+    padding: 12px;
+    text-decoration: none;
+    &:hover {
+      background-color: $coffeebg;
+      color: $navlink;
+      text-decoration: underline;
+    }
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Machines Page */
+.machines {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+}
+
+.machines h1 {
+  grid-column: 1/4;
+}
+
+// .machines section {
+//   border: 1px solid blue;
+//   max-width: 500px;
+// }
+
+.machines img {
+  // margin: auto;
+  text-align: center;
+  width: 300px;
+}
