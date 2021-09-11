@@ -4,13 +4,13 @@ $coffeebg: rgba(173, 94, 3, 0.75);
 $navlink: rgb(80, 47, 10);
 
 :root {
-  font-size: 62.5%;
+  font-size: 62.5%; // 10px = 1rem
 }
 
 body {
   background-color: $coffeebg;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 main {
@@ -34,7 +34,7 @@ nav {
     color: $coffeebg;
     font-weight: bold;
     flex-grow: 1;
-    padding: 12px;
+    padding: 1.2rem;
     text-decoration: none;
     &:hover {
       background-color: $coffeebg;
@@ -65,13 +65,29 @@ h1 {
   grid-column: 1/4;
 }
 
-// .machines section {
-//   border: 1px solid blue;
-//   max-width: 500px;
-// }
-
 .machines img {
-  // margin: auto;
   text-align: center;
   width: 300px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+
+    li {
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+  }
+
+  .machines {
+    display: flex;
+    flex-direction: column;
+  }
 }

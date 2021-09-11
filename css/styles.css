@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 :root {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   background-color: rgba(173, 94, 3, 0.75);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+}
 
 main {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 80%; }
+  max-width: 80%;
+}
 
 nav ul {
   background-color: #502f0a;
@@ -19,37 +22,66 @@ nav ul {
   justify-content: space-evenly;
   list-style: none;
   margin: 0;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+}
 nav a {
   color: rgba(173, 94, 3, 0.75);
   font-weight: bold;
   flex-grow: 1;
-  padding: 12px;
-  text-decoration: none; }
-  nav a:hover {
-    background-color: rgba(173, 94, 3, 0.75);
-    color: #502f0a;
-    text-decoration: underline; }
+  padding: 1.2rem;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: rgba(173, 94, 3, 0.75);
+  color: #502f0a;
+  text-decoration: underline;
+}
 
 h1,
 h2,
 h3 {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 h1 {
   font-size: 3rem;
-  text-align: center; }
+  text-align: center;
+}
 
 /* Machines Page */
 .machines {
   display: grid;
-  grid-template-columns: repeat(3, 500px); }
+  grid-template-columns: repeat(3, 500px);
+}
 
 .machines h1 {
-  grid-column: 1/4; }
+  grid-column: 1/4;
+}
 
 .machines img {
   text-align: center;
-  width: 300px; }
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  nav ul li {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+
+  .machines {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
