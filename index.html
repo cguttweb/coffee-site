@@ -18,6 +18,12 @@
       <li><a href="machines.html">Machines</a></li>
       <li><a href="glossary.html">Glossary</a></li>
       <li><a href="world-coffees.html">World Coffees</a></li>
+      <select name="themepicker" id="theme-picker" onchange="pickTheme(event)">
+        <option selected disabled>Please select</option>
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+        <option value="sepia">sepia</option>
+      </select>
     </ul>
   </nav>
   <main>
@@ -25,5 +31,6 @@
 
     <p>Coffee is a personal addiction (obsession). The links above will give more information about particular aspects of brewing, roasting and making coffee.</p>
   </main>
+  <script src="./js/themePicker.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 
 body {
   background-color: rgba(173, 94, 3, 0.75);
+  color: #502f0a;
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
 }
@@ -37,6 +38,29 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.sepia-mode {
+  background-color: rgba(173, 94, 3, 0.75);
+  color: #502f0a;
+}
+
+.dark-links a {
+  color: #ffffff;
+}
+
+.light-links a {
+  color: #333333;
+}
+
 h1,
 h2,
 h3 {
@@ -46,6 +70,34 @@ h3 {
 h1 {
   font-size: 3rem;
   text-align: center;
+}
+
+/* Drinks Page */
+table {
+  margin: auto;
+  max-width: 1400px;
+}
+
+table th {
+  background-color: #502f0a;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: left;
+}
+
+table tr {
+  background-color: rgba(173, 94, 3, 0.75);
+  color: #502f0a;
+}
+
+table tr {
+  text-transform: capitalize;
+}
+
+table td {
+  padding: 1rem;
 }
 
 /* Machines Page */
