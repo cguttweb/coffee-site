@@ -8,22 +8,18 @@ function pickTheme(event) {
 
   if (val === 'dark') {
     body.classList.add('dark-mode')
-    body.classList.remove('light-mode')
-    body.classList.remove('sepia-mode')
-    ul.classList.add('light-mode')
-    ul.classList.remove('dark-mode', 'dark-links')
+    body.classList.remove('light-mode', 'sepia-mode')
+    ul.classList.add('light-mode', 'light-links')
+    ul.classList.remove('dark-mode', 'dark-links', 'sepia-links')
   } else if (val === 'light') {
     body.classList.add('light-mode')
-    body.classList.remove('dark-mode')
-    body.classList.remove('sepia-mode')
-    ul.classList.add('dark-mode')
-    ul.classList.add('light-links')
-    ul.classList.remove('light-mode')
+    body.classList.remove('dark-mode', 'sepia-mode')
+    ul.classList.add('dark-mode', 'dark-links')
+    ul.classList.remove('light-links', 'sepia-links', 'light-mode')
   } else {
     body.classList.add('sepia-mode')
-    body.classList.remove('light-mode')
-    body.classList.remove('dark-mode')
-    ul.classList.add('dark-links')
-    ul.classList.remove('light-mode', 'light-links')
+    body.classList.remove('light-mode', 'dark-mode')
+    ul.classList.add('sepia-links')
+    ul.classList.remove('light-mode', 'light-links', 'dark-links', 'dark-mode')
   }
 }

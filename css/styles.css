@@ -61,6 +61,10 @@ nav a:hover {
   color: #333333;
 }
 
+.sepia-links a {
+  color: rgba(173, 94, 3, 0.75);
+}
+
 h1,
 h2,
 h3 {
@@ -115,7 +119,7 @@ table td {
   width: 300px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     font-size: 2rem;
   }
@@ -133,6 +137,19 @@ table td {
   .machines {
     display: flex;
     flex-direction: column;
+  }
+
+  main.drinks-page {
+    max-width: 95%;
+  }
+
+  table th {
+    display: none;
+  }
+
+  table td {
+    display: block;
+    text-align: center;
   }
 }
 

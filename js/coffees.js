@@ -128,7 +128,7 @@ function getCoffees(){
     let row = document.createElement('tr')
     row.classList.add('row')
     row.innerHTML = `
-    <td>${coffee.name}</td>
+    <td><strong>${coffee.name}</strong></td>
     <td>${coffee.description}</td>
     <td>${coffee.type}</td>
     <td><img src="${coffee.photo}" width="300" /></td>
