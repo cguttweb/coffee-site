@@ -11,13 +11,19 @@
   <nav id="main-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="beans-and-grinds.html">Beans and Grinds</a></li>
+      <li><a href="beans.html">Beans and Grinds</a></li>
       <li><a href="drinks.html">Drinks</a></li>
       <li><a href="history.html">History</a></li>
       <li><a href="flavours.html">Flavours</a></li>
       <li><a href="machines.html">Machines</a></li>
       <li><a href="glossary.html">Glossary</a></li>
       <li><a href="world-coffees.html">World Coffees</a></li>
+      <select name="themepicker" id="theme-picker" onchange="pickTheme(event)">
+        <option selected disabled>Please select</option>
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+        <option value="sepia">sepia</option>
+      </select>
     </ul>
   </nav>
   <main>
