@@ -74,7 +74,7 @@
     </div>
   
     <div id="americas" class="tabcontent">
-      <h2>The Americas</h2>
+      <h2>South and Central America</h2>
       <p>Some of the most popular is produced here with Brazil being the largest producer in the world.</p>
 
       <section>
@@ -90,7 +90,7 @@
       </section>
       <section>
         <h3>Honduras</h3>
-        <p>Honduras produces Arabiac and hold asround 3% of the world market. It uses the washed method and is capable of growing clean complex coffees, but a lack of production does hinder production at times. It offers a variety of contrasting flavours from soft, low-acidity and toffee-like to more acidic Kenyan style coffees.</p>
+        <p>Honduras produces arabica nd holds around 3% of the world market. It uses the washed method and is capable of growing clean complex coffees, but a lack of production does hinder production at times. It offers a variety of contrasting flavours from soft, low-acidity and toffee-like to more acidic Kenyan style coffees.</p>
         <p>Harvest period is between November and April</p>
       </section>
       <section>
@@ -99,8 +99,39 @@
         <p>Harvest period is May to September</p>
       </section>
       <section>
+        <h3>Nicaragua</h3>
+        <p>Nicaragua produces arabica and has 1.2% of the world market. It has c.40,000 growers with 80% being small farms less than 3 hectares (7 acres) each at altitudes of 800-1900m above sea level. The production has suffered because of natural disasters, political and financial instability and producers are keen to improve their standing in specialty markets and continue to improve agricultural practices and their infrastructure. The flavour profiles vary between regions with the best coffees have a range from sweet, fudge and chocolate to floral, herbal, savoury and honeyed.</p>
+        <p>The harvest period is between October and March</p>
+      </section>
+      <section>
         <h3>Bolivia</h3>
-        <p>Bolivia is a small producer that has 0.1% of the world market and as it is landlocked most of their coffee is shipped via Peru. It grows arabica varieties with main regions of production being La Paz provinces such as North and South Yungas, Franz Tamayo and Larecaja. There is a strong coffee culture including 23,000 small family-run farms each between 5-20 acres with Bolivia drinking c.40% of the coffee it produces. There are not many flavour profiles but the coffees can be sweet and balanced, floral and herbal, or creamy or chocolatey. The harvest period is between July and November but the times vary depending on temperatures, altitudes and levels of rainfall.</p>
+        <p>Bolivia is a small producer that has 0.1% of the world market and as it is landlocked most of their coffee is shipped via Peru. It grows arabica varieties with main regions of production being La Paz provinces such as North and South Yungas, Franz Tamayo and Larecaja. There is a strong coffee culture including 23,000 small family-run farms each between 5-20 acres with Bolivia drinking c.40% of the coffee it produces. There are not many flavour profiles but the coffees can be sweet and balanced, floral and herbal, or creamy or chocolatey.</p> 
+        <p>The harvest period is between July and November, but the times vary depending on temperatures, altitudes and levels of rainfall.</p>
+      </section>
+      <section>
+        <h3>Guatemala</h3>
+        <p>Guatemala produces 98% arabica and a small amount of robusta it has c.2.5% of the world market and is the one of the top 10 world producers. There are c.100,000 producers with small farms of 5-7 acres each. The Guatemalan National Coffee Association has identified 8 regions with distinct profiles and there is large variety in aroma and flavour. The flavour profiles vary from sweet with cocoa and toffee notes, to herbal, citrus or floral with a crisp acidity.</p>
+        <p>The harvest period is between November and April</p>
+      </section>
+      <section>
+        <h3>Ecuador</h3>
+        <p>Ecuador has 0.5% of the world market and produces robusta and low-quality arabica. Most coffee is shade-grown and organic with the largest growing area being Manabi which produces 50% of the countrys arabica crop. There are a variety of flavour profiles because of varied ecosystems but most have classic South American qualities. These include medium body, pleasant sweetness and some acidity. Despite there being challenges for the industry there is potential for more quality in the highest altitudes.</p>
+        <p>The harvest period is between May and September</p>
+      </section>
+      <section>
+        <h3>Costa Rica</h3>
+        <p>Costa Rica produces arabica and has c.1% of the market. It has banned robusta production and the government has issued strict guidelines to protect ecosystems and the future of coffee production. There are c.50,000 small producers with less than 5 hectares (12 acres). The quality has improved with several micro-mills built around the growing regions allowing small producers to process their own beans, control and add value to their crop and trade directly with buyers. The coffees are easy to drink with flavour profiles are a complex sweetness with refined acidity, mellow textures and a range of citrus floral flavours.</p>
+        <p>The harvest period varies between each region</p>
+      </section>
+      <section>
+        <h3>El Salvador</h3>
+        <p>El Salvador produces arabica and has 0.9% of the world market and is in top 15 of world producers. There are 20,000 growers with 95% being farms of less than 20 hectares (50 acres) between 500-1200m above sea level with half of these in the mountainous Apaneca-Llamatepec region. The coffee plantations have played a key role in the battle vs deforestation and the loss of habitat for wildlife. More recently growers have worked on improving the quality of their coffee and marketing it to specialty buyers. The flavour profiles are sweet and creamy with notes of dried fruit, chocolate, citrus and caramel. </p>
+        <p>The harvest period is between October and March</p>
+      </section>
+      <section>
+        <h3>Panama</h3>
+        <p>Panama is a small producer with mostly arabica but also some robusta. The farms are family-run small to medium-sized with well-developed infrastructure and good processing facilities in the country. Much of the coffee grows in the western province of Chiriqui where the climate and fertile soils are perfect conditions.The coffees are sweet and balanced sometimes floral or citrus, well-rounded and easy to drink. The oldest region is Baquete and is home to some of the highly priced coffee in the world with flavours ranging from cocoa to fruity with some acidity. The most unusual varieties such as Geisha are very expensive.</p>
+        <p>The harvest period is between December and March</p>
       </section>
     </div>
 
@@ -114,7 +145,7 @@
     </div>
 
     <div id="top10" class="tabcontent">
-      <h2>Top 10 Producers</h2>
+      <h2>Top 10 Producers in 2020</h2>
       <ol>
         <li>Brazil 🇧🇷 </li>
         <li>Vietnam 🇻🇳 </li>
@@ -133,7 +164,7 @@
   <script src="./js/themePicker.js"></script>
   <script>
     function showCoffees(e, region) {
-      var i, tabcontent, tablinks;
+      let i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -145,6 +176,6 @@
       document.getElementById(region).style.display = "block";
       e.currentTarget.className += " active";
     }
-      </script>
+    </script>
 </body>
 </html>
