@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --coffee-bg: rgba(173, 94, 3, 0.75);
+  --coffee-dark: rgb(80, 47, 10);
+  --coffee-light: rgb(142, 73, 46);
+  --dark-brown: rgb(80, 31, 0);
+  --dark-grey: rgb(51, 51, 51);
+  --light-grey: rgb(153, 153, 153);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--coffee-bg);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 150rem;
+}
+
+.navbar ul {
+  background-color: var(--coffee-dark);
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+  &:hover {
+    color: var(--coffee-light);
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin: 0;
+}
